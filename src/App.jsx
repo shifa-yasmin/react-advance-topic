@@ -1,10 +1,13 @@
-import  { createContext } from 'react'
-import Home from './Home'
-export const myContext=createContext("gress")
+import { createContext,  useState } from 'react'
+import Home from './Home';
+export const myContext=createContext();
 const App = () => {
+  const [name,setName]=useState("safa")
   return (
     <div>
-     <Home/>
+        <myContext.Provider value={{name,setName}}>
+          <Home/>
+          </myContext.Provider>  
     </div>
   )
 }
