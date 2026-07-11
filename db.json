@@ -1,5 +1,13 @@
 {
-    "user":[
-        
-    ]
+  "user": [
+    {
+      "name": [],
+      "id": "wF_J5pKNfxk"
+    },
+    {
+      "name": "shifa",
+      "id": "OQCOwsfgPZ8"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
