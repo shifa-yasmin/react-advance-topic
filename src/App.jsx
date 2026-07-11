@@ -1,17 +1,19 @@
-import  { useReducer } from 'react'
-
-const reducer=(state,action)=>{
-  if(action.type==="toggle"){
-    return state==="red"?"pink":"red"
-  }
-}
+// import React from 'react'
+import {BrowserRouter, Route, Routes} from "react-router-dom"
+import Home from "./Home"
+import About from "./About"
 const App = () => {
-    const [state,dispatch]=useReducer(reducer,"red")
   return (
-    <div style={{background:state, height:"100vh"}}>
-      <button onClick={()=>dispatch({type:"toggle"})}>click</button>
+    <div>
+        <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<Home/>}/>
+             <Route path="/about/:id" element={<About/>}/>
+        </Routes>
+        </BrowserRouter>
     </div>
   )
 }
-
 export default App
+
+

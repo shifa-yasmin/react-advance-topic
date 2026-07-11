@@ -1,49 +1,84 @@
 {
-  "user": [
+  "students": [
     {
-      "name": [],
-      "id": "wF_J5pKNfxk"
+      "id": 1,
+      "name": "Arjun Kumar",
+      "age": 20,
+      "course": "B.Tech",
+      "department": "Computer Science",
+      "city": "Bengaluru"
     },
     {
-      "name": "shifa",
-      "id": "OQCOwsfgPZ8"
+      "id": 2,
+      "name": "Anjali Sharma",
+      "age": 21,
+      "course": "BCA",
+      "department": "Information Technology",
+      "city": "Mumbai"
     },
     {
-      "name": "safa",
-      "id": "OJmSk4UCNkg"
+      "id": 3,
+      "name": "Rahul Verma",
+      "age": 22,
+      "course": "B.Sc",
+      "department": "Mathematics",
+      "city": "Delhi"
     },
     {
-      "name": "chinju",
-      "id": "rSi1AphsV0Q"
+      "id": 4,
+      "name": "Sneha Reddy",
+      "age": 20,
+      "course": "B.Com",
+      "department": "Commerce",
+      "city": "Hyderabad"
     },
     {
-      "name": "sachu",
-      "id": "3iKxQ6gLQK4"
+      "id": 5,
+      "name": "Aman Singh",
+      "age": 23,
+      "course": "MBA",
+      "department": "Management",
+      "city": "Pune"
     },
     {
-      "name": "minnu",
-      "id": "X5TSQNyJMgE"
+      "id": 6,
+      "name": "Priya Nair",
+      "age": 21,
+      "course": "B.Tech",
+      "department": "Electronics",
+      "city": "Kochi"
     },
     {
-      "name": "shanu",
-      "id": "p9aiGWsWF50"
+      "id": 7,
+      "name": "Vikram Patel",
+      "age": 22,
+      "course": "BCA",
+      "department": "Computer Applications",
+      "city": "Ahmedabad"
     },
     {
-      "name": "shamna",
-      "id": "Kn93DFIl5t8"
+      "id": 8,
+      "name": "Meera Joshi",
+      "age": 20,
+      "course": "B.Sc",
+      "department": "Physics",
+      "city": "Jaipur"
     },
     {
-      "name": "hamna",
-      "id": "Dx4N4CdvVpc"
+      "id": 9,
+      "name": "Kiran Das",
+      "age": 21,
+      "course": "B.Tech",
+      "department": "Mechanical",
+      "city": "Chennai"
     },
     {
-      "name": "alllu",
-      "id": "cvacw6Hzzvo"
-    },
-    {
-      "name": "lallu",
-      "id": "569eSipmkiw"
+      "id": 10,
+      "name": "Neha Gupta",
+      "age": 22,
+      "course": "MCA",
+      "department": "Computer Science",
+      "city": "Lucknow"
     }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
 }
