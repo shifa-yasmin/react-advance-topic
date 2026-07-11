@@ -34,6 +34,13 @@ const Home = () => {
                      ))}     
                 </tbody>
         </table>
+        <div>
+            <button onClick={()=>setCurrentPage(currentPage-1)} disabled={currentPage===1}>prev</button>
+            <span>
+                page {currentPage}to {totelpages}
+            </span>
+            <button onClick={()=>setCurrentPage(currentPage+1)} disabled={currentPage===totelpages}>next</button>
+        </div>
     </div>
   )
 }
