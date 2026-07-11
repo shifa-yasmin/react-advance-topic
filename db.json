@@ -7,6 +7,34 @@
     {
       "name": "shifa",
       "id": "OQCOwsfgPZ8"
+    },
+    {
+      "name": "safa",
+      "id": "OJmSk4UCNkg"
+    },
+    {
+      "name": "chinju",
+      "id": "rSi1AphsV0Q"
+    },
+    {
+      "name": "sachu",
+      "id": "3iKxQ6gLQK4"
+    },
+    {
+      "name": "minnu",
+      "id": "X5TSQNyJMgE"
+    },
+    {
+      "name": "shanu",
+      "id": "p9aiGWsWF50"
+    },
+    {
+      "name": "shamna",
+      "id": "Kn93DFIl5t8"
+    },
+    {
+      "name": "hamna",
+      "id": "Dx4N4CdvVpc"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

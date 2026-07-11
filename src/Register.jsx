@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import {useNavigate} from "react-router-dom"
 import axios from "axios"
 const Register= () => {
     const navigate=useNavigate()
-  const [name,setname]=useState([])
+  const [name,setname]=useState("")
   
   const handle=()=>{
        axios.post("http://localhost:3000/user",{
