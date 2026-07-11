@@ -1,11 +1,14 @@
-import  { useContext } from 'react'
+import { useContext } from 'react'
 import { myContext } from './App'
 
 const Home = () => {
-    const name=useContext(myContext)
+    const {toggle,setToggle}=useContext(myContext);
+    const handle=()=>{
+        setToggle(toggle==="red"?"pink":"red")
+    }
   return (
-    <div>
-    <h1>name is:{name}</h1>
+    <div style={{background:toggle}}>
+        <button onClick={handle}>click</button>
     </div>
   )
 }

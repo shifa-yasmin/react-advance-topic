@@ -1,14 +1,13 @@
 import  { createContext, useState } from 'react'
-import Home from './Home';
- export const myContext=createContext();
+import Home from './Home'
+export const myContext=createContext()
 const App = () => {
- 
-  const [name,setname]=useState("shifa")
+    const [toggle,setToggle]=useState("red")
   return (
     <div>
-    <myContext.Provider value={name}>
-      <Home/>
-    </myContext.Provider>
+     <myContext.Provider value={{toggle,setToggle}}>
+          <Home/>
+     </myContext.Provider>
     </div>
   )
 }
