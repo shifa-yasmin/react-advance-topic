@@ -1,13 +1,19 @@
-import { createContext,  useState } from 'react'
-import Home from './Home';
-export const myContext=createContext();
+import React, { useReducer } from 'react'
+  const reducer=(state,action)=>{
+    if(action.type==="inc"){
+      return state+1
+    }
+    if(action.type==="dec"){
+      return state-1
+    }
+  }
 const App = () => {
-  const [name,setName]=useState("safa")
+  const [state,dispatch]=useReducer(reducer,0)
   return (
     <div>
-        <myContext.Provider value={{name,setName}}>
-          <Home/>
-          </myContext.Provider>  
+      <h1>count is:{state}</h1>
+      <button onClick={()=>dispatch({type:"inc"})}>+</button>
+      <button onClick={()=>dispatch({type:"dec"})}>-</button>
     </div>
   )
 }
