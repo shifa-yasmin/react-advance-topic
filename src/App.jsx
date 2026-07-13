@@ -1,19 +1,20 @@
-// import React from 'react'
-import {BrowserRouter, Route, Routes} from "react-router-dom"
-import Home from "./Home"
-import About from "./About"
+import { useState } from 'react'
+
 const App = () => {
+  const [count,setCount]=useState(0);
+  const display=()=>{
+     console.log("hello")   
+  }
   return (
     <div>
-        <BrowserRouter>
-        <Routes>
-            <Route path="/" element={<Home/>}/>
-             <Route path="/about/:id" element={<About/>}/>
-        </Routes>
-        </BrowserRouter>
+      <h1>count :{count}</h1>
+      <button onClick={()=>setCount(count+1)}>increments</button>
+      <br/>
+      <button onClick={display}>display</button>
     </div>
   )
 }
+
 export default App
 
 
