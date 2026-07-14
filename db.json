@@ -1,7 +1,7 @@
 {
   "students": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Arjun Kumar",
       "age": 20,
       "course": "B.Tech",
@@ -9,7 +9,7 @@
       "city": "Bengaluru"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Anjali Sharma",
       "age": 21,
       "course": "BCA",
@@ -17,7 +17,7 @@
       "city": "Mumbai"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Rahul Verma",
       "age": 22,
       "course": "B.Sc",
@@ -25,7 +25,7 @@
       "city": "Delhi"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Sneha Reddy",
       "age": 20,
       "course": "B.Com",
@@ -33,7 +33,7 @@
       "city": "Hyderabad"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Aman Singh",
       "age": 23,
       "course": "MBA",
@@ -41,7 +41,7 @@
       "city": "Pune"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Priya Nair",
       "age": 21,
       "course": "B.Tech",
@@ -49,7 +49,7 @@
       "city": "Kochi"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Vikram Patel",
       "age": 22,
       "course": "BCA",
@@ -57,7 +57,7 @@
       "city": "Ahmedabad"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Meera Joshi",
       "age": 20,
       "course": "B.Sc",
@@ -65,7 +65,7 @@
       "city": "Jaipur"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Kiran Das",
       "age": 21,
       "course": "B.Tech",
@@ -73,12 +73,18 @@
       "city": "Chennai"
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Neha Gupta",
       "age": 22,
       "course": "MCA",
       "department": "Computer Science",
       "city": "Lucknow"
+    },
+    {
+      "name": "shifaana",
+      "email": "shifana@gmail.com",
+      "id": "1b3RQasiM54"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
