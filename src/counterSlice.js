@@ -5,16 +5,16 @@ const initialState={
     count:0,
 }
 const counterSlice=createSlice({
-      name:"count"  ,
-      initialState,
-      reducers:{
-         increment:(state)=>{
+    name:"count",
+    initialState,
+    reducers:{
+        increment:(state)=>{
             state.count++;
         },
         decrement:(state)=>{
-           state.count--;
+            state.count--;
         }
-      }
+    }
 })
-export const {increment,decrement}=counterSlice.actions;
-export default counterSlice.reducer;
+export const {increment,decrement} =counterSlice.actions;
+export default counterSlice.reducer

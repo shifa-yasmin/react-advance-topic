@@ -1,19 +1,22 @@
+import { useRef } from "react";
 
+function App() {
+  const count = useRef(0);
 
-// import React from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { decrement, increment } from './Counterslice';
-
-const App = () => {
-  const count=useSelector((state)=>state.counter.count)
-   const dispatch=useDispatch();
   return (
-    <div>
-    <h1>count:{count}</h1>
-    <button onClick={()=>dispatch(increment())}>+</button>
-    <button onClick={()=>dispatch(decrement())}>-</button>
-    </div>
-  )
+    <>
+      <h2>{count.current}</h2>
+
+      <button
+        onClick={() => {
+          count.current++;
+          console.log(count.current);
+        }}
+      >
+        Increment
+      </button>
+    </>
+  );
 }
 
-export default App
+export default App;
