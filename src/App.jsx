@@ -1,14 +1,14 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 
 const App = () => {
-  const [count,setCount]=useState(0);
-    const handle=()=>{
-      setCount((prev)=>prev+1);
-    }
+  const [value,setValue]=useState(false);
+  const handle=()=>{
+    setValue((prev)=>!prev)
+  }
   return (
     <div>
-  <h1>count is:{count}</h1>
-  <button onClick={handle}>+</button>
+      <h1>{value?"open":"close"}</h1>
+      <button onClick={handle}>click</button>
     </div>
   )
 }
