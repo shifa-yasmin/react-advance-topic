@@ -84,6 +84,11 @@
       "name": "shifaana",
       "email": "shifana@gmail.com",
       "id": "1b3RQasiM54"
+    },
+    {
+      "name": "minnuu",
+      "email": "minnuus@gmail.com",
+      "id": "q3FzQO4tzZE"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
