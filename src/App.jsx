@@ -1,22 +1,16 @@
-import { useRef } from "react";
+import React, { useState } from 'react'
 
-function App() {
-  const count = useRef(0);
-
+const App = () => {
+  const [count,setCount]=useState(0);
+    const handle=()=>{
+      setCount((prev)=>prev+1);
+    }
   return (
-    <>
-      <h2>{count.current}</h2>
-
-      <button
-        onClick={() => {
-          count.current++;
-          console.log(count.current);
-        }}
-      >
-        Increment
-      </button>
-    </>
-  );
+    <div>
+  <h1>count is:{count}</h1>
+  <button onClick={handle}>+</button>
+    </div>
+  )
 }
 
-export default App;
+export default App
