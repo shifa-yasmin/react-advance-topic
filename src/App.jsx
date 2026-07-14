@@ -1,12 +1,20 @@
-import React from 'react'
-import Button from './Button'
-
+import  { useEffect, useState } from 'react'
+// import axios from "axios"
 const App = () => {
+  const [data,setData]=useState([]);
+  useEffect(()=>{
+     fetch("http://localhost:3000/students")
+     .then((res1)=>res1.json())
+     .then((res)=>{
+      setData(res);
+      console.log(res)
+     })
+  },[])
   return (
     <div>
-      <Button text="save" color="green">close</Button>
-      <Button text="update" color="blue">close</Button>
-      <Button text="delete" color="red">close</Button>
+        {data.map((n)=>(
+          <p>{n.name}</p>
+        ))}
     </div>
   )
 }
