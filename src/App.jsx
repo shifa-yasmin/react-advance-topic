@@ -1,17 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
+import Button from './Button'
 
 const App = () => {
-  const [color,setColor]=useState("red");
-  const handle=()=>{
-    setColor((prev)=>prev==="red"?"pink":"red")
-  }
   return (
     <div>
-     <div style={{background:color ,height:"100vh"}}>
-    <button onClick={handle}>click</button>
+      <Button text="save" color="green">close</Button>
+      <Button text="update" color="blue">close</Button>
+      <Button text="delete" color="red">close</Button>
     </div>
-    </div>
-    
   )
 }
 
