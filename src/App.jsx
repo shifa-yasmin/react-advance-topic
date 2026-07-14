@@ -1,15 +1,17 @@
-import  { useState } from 'react'
+import React, { useState } from 'react'
 
 const App = () => {
-  const [value,setValue]=useState(false);
+  const [color,setColor]=useState("red");
   const handle=()=>{
-    setValue((prev)=>!prev)
+    setColor((prev)=>prev==="red"?"pink":"red")
   }
   return (
     <div>
-      <h1>{value?"open":"close"}</h1>
-      <button onClick={handle}>click</button>
+     <div style={{background:color ,height:"100vh"}}>
+    <button onClick={handle}>click</button>
     </div>
+    </div>
+    
   )
 }
 
