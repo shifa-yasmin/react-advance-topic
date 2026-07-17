@@ -1,13 +1,14 @@
 
 // import Colorchange from './Colorchange'
-
-import { Counterintervall } from "./Counterintervall"
+// import { Counterintervall } from "./Counterintervall"
+import Button from "./Button"
 
 const App = () => {
   return (
     <div>
       {/* <Colorchange/> */}
-      <Counterintervall/>
+      {/* <Counterintervall/> */}
+      <Button/>
     </div>
   )
 }
