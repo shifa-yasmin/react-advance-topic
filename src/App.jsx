@@ -13,11 +13,15 @@ const App = () => {
   return (
     <div>
       <h1>color change </h1>
-      <div style={{width:"200px", height:"100px" ,background:colors}}>
-         
+      {colors.map((n)=>(
+        <div style={{width:"200px", height:"100px" ,background:colors}}>
+            {n.currentcolor}
       </div>
+      ))}
       <div>
-        <button onClick={}>prev</button>
+        <button onClick={()=>setCurrentPage(currentPage-1)} disabled={currentPage===1}>prev</button>
+        <span>{currentPage} page {TotelPsage}</span>
+        <button onClick={()=>setCurrentPage(currentPage+1)} disabled={currentPage===TotelPsage}>next</button>
       </div>
     </div>
   )
