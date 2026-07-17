@@ -1,11 +1,13 @@
-import React from 'react'
+import  { useContext } from 'react'
+import { myContext } from './App'
 
-const Button = ({text,color}) => {
-
+const Button = () => {
+    const {count,setCount}=useContext(myContext)
   return (
-    <button style={{background:color,padding:"10px"}}>
-        {text}
-    </button>
+    <div>
+        <h1>count is :{count}</h1>
+        <button onClick={()=>setCount(count+1)}>+</button>
+    </div>
   )
 }
 
