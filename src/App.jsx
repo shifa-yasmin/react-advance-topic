@@ -1,14 +1,17 @@
 
 // import Colorchange from './Colorchange'
 // import { Counterintervall } from "./Counterintervall"
-import Button from "./Button"
+// import Button from "./Button"
+
+import Fetchpost from "./Fetchpost"
 
 const App = () => {
   return (
     <div>
       {/* <Colorchange/> */}
       {/* <Counterintervall/> */}
-      <Button/>
+      {/* <Button/> */}
+      <Fetchpost/>
     </div>
   )
 }
