@@ -3,19 +3,22 @@
 // import { Counterintervall } from "./Counterintervall"
 // import Button from "./Button"
 // import Fetchpost from "./Fetchpost"
-import UseRef from "./UseRef"
+// import UseRef from "./UseRef"
+
+import Pagination from "./Pagination"
 
 // import TudoTrash from "./TudoTrash"
 
 const App = () => {
   return (
     <div>
-      <UseRef/>
+      {/* <UseRef/> */}
       {/* <Colorchange/> */}
       {/* <Counterintervall/> */}
       {/* <Button/> */}
       {/* <Fetchpost/> */}
       {/* <TudoTrash/> */}
+      <Pagination/>
     </div>
   )
 }
