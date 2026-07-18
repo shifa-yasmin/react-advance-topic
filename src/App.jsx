@@ -9,16 +9,16 @@
 // import Fetchpost from "./Fetchpost"
 // import Fetchget from "./Fetchget"
 
-import { createContext, useState } from "react"
-import Context from "./Context";
-export const myContext=createContext();
+import useCounter from "./useCounter"
+
+
 const App = () => {
-         const [toggle,setToggle]=useState("pink")
+     const {count,inc,dec}=useCounter()    
   return (
     <div>
-      <myContext.Provider value={{toggle,setToggle}}>
-           <Context/>
-      </myContext.Provider>
+        <h1>count is:{count}</h1>
+        <button onClick={()=>inc()}>+</button>
+        <button onClick={()=>dec()}>-</button>
       {/* <UseRef/> */}
       {/* <Colorchange/> */}
       {/* <Counterintervall/> */}
