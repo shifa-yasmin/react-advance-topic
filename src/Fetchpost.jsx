@@ -1,33 +1,50 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+
 const Fetchpost = () => {
-    const [user,setUser]=useState(null)
-    const handle=()=>{
-        fetch("https://jsonplaceholder.typicode.com/users",{
-            method:"post",
-            headers:{
-                "Content-type":"application/json"
-            },
-            body:JSON.stringify({
-                name:"shifa",
-                place:"koramkode"
-            })
+    const [name,setName]=useState("");
+    const [email,setEmail]=useState("")
+    const [data,setData]=useState([])
+    useEffect(()=>{
+    fetch("http://localhost:3000/users")
+    .then((res)=>res.json())
+    .then((data)=>setData(data))
+    },[])
+   const handle=()=>{
+     fetch("http://localhost:3000/users",{
+        method:"post",
+        headers:{
+            "Content-type":"application/json"
+        },
+        body:JSON.stringify({
+            name,email
         })
-        .then((res1)=>res1.json())
-        .then((res)=>{
-            setUser(res)
-            console.log(res)
+     })
+     .then((res)=>res.json())
+        .then((data)=>{
+            setData((prev)=>[...prev,data]);
+            console.log(data)
         })
-    }
+   }
   return (
     <div>
+        <input value={name} onChange={(e)=>setName(e.target.value)} placeholder='enter name'/>
+        <br/>
+        <input value={email} onChange={(e)=>setEmail(e.target.value)} placeholder='enter email'/>
+        <br/>
         <button onClick={handle}>click</button>
-        {user&&(
-            <div>
-                <h1>{user.name}</h1>
-                <h1>{user.place}</h1>
-            </div>
-         )}
+        <ul>
+    {data.map((n)=>(
+           
+           <div key={n.id}>
+             <p>{n.name}</p>
+             <p>{n.email}</p>
+           </div>
+          
+        ))}
+        </ul>
+        
     </div>
   )
 }
+
 export default Fetchpost

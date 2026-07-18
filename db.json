@@ -81,14 +81,66 @@
       "city": "Lucknow"
     },
     {
-      "name": "shifaana",
-      "email": "shifana@gmail.com",
-      "id": "1b3RQasiM54"
+      "name": "dfghjk",
+      "email": "shifayasmin23@gmail.com",
+      "id": "_17VMQYNHUQ"
     },
     {
-      "name": "minnuu",
-      "email": "minnuus@gmail.com",
-      "id": "q3FzQO4tzZE"
+      "name": "sdfgbn",
+      "email": "shifayasmin23@gmail.com",
+      "id": "GFIbhrZTEX4"
+    },
+    {
+      "name": "dfghjk",
+      "email": "shifayasmin23@gmail.com",
+      "id": "ScY2-47yMKc"
+    }
+  ],
+  "users": [
+    {
+      "name": "nm,",
+      "email": "shifayasmin23@gmail.com",
+      "id": "GRwV5tq7nU0"
+    },
+    {
+      "name": "safa",
+      "email": "shifayasmin23@gmail.com",
+      "id": "pWxDby21Fmc"
+    },
+    {
+      "name": "fghj",
+      "email": "shifayasmin23@gmail.com",
+      "id": "7CeCe8PKMDI"
+    },
+    {
+      "name": "sana",
+      "email": "shifayasmin23@gmail.com",
+      "id": "9yAP64N3Z4o"
+    },
+    {
+      "name": "bnm,",
+      "email": "shifayasmin23@gmail.com",
+      "id": "6YPPbha4Htk"
+    },
+    {
+      "name": "fghjk",
+      "email": "shifayasmin23@gmail.com",
+      "id": "L7AVtqiBI9w"
+    },
+    {
+      "name": "fghj",
+      "email": "fghjk",
+      "id": "ENyLe7g-4UI"
+    },
+    {
+      "name": "fghjk",
+      "email": "gnm,",
+      "id": "nHDD-x0va_4"
+    },
+    {
+      "name": "fghjm,",
+      "email": "shifayasmin23@gmail.com",
+      "id": "a5olEdZxt-s"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

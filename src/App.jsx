@@ -4,10 +4,10 @@
 // import Button from "./Button"
 // import Fetchpost from "./Fetchpost"
 // import UseRef from "./UseRef"
-
-import Pagination from "./Pagination"
-
+// import Pagination from "./Pagination"
 // import TudoTrash from "./TudoTrash"
+
+import Fetchpost from "./Fetchpost"
 
 const App = () => {
   return (
@@ -18,7 +18,8 @@ const App = () => {
       {/* <Button/> */}
       {/* <Fetchpost/> */}
       {/* <TudoTrash/> */}
-      <Pagination/>
+      {/* <Pagination/> */}
+      <Fetchpost/>
     </div>
   )
 }
