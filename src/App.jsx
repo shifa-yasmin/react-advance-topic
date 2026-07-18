@@ -13,10 +13,10 @@ import { createContext, useState } from "react"
 import Context from "./Context";
 export const myContext=createContext();
 const App = () => {
-         const [count,setCount]=useState(0)
+         const [toggle,setToggle]=useState("pink")
   return (
     <div>
-      <myContext.Provider value={{count,setCount}}>
+      <myContext.Provider value={{toggle,setToggle}}>
            <Context/>
       </myContext.Provider>
       {/* <UseRef/> */}

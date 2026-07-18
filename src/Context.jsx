@@ -4,11 +4,10 @@ import { useContext } from "react"
 import { myContext } from "./App"
 
 const Context = () => {
-    const {count,setCount}=useContext(myContext)
+    const {toggle,setToggle}=useContext(myContext)
   return (
-    <div>
-    <h1>count is:{count}</h1>
-    <button onClick={()=>setCount(count+1)}>+</button>
+    <div style={{background:toggle, height:"100vh"}}>
+    <button onClick={()=>setToggle(toggle==="pink"?"red":"pink")}>color change</button>
     </div>
   )
 }
