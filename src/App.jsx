@@ -8,17 +8,17 @@
 // import TudoTrash from "./TudoTrash"
 // import Fetchpost from "./Fetchpost"
 // import Fetchget from "./Fetchget"
+// import UseReducer from "./UseReducer"
 
-import useCounter from "./useCounter"
+import Child from "./Child"
 
 
-const App = () => {
-     const {count,inc,dec}=useCounter()    
+
+const App = () => {  
   return (
     <div>
-        <h1>count is:{count}</h1>
-        <button onClick={()=>inc()}>+</button>
-        <button onClick={()=>dec()}>-</button>
+       <Child/>
+    {/* <UseReducer/> */}
       {/* <UseRef/> */}
       {/* <Colorchange/> */}
       {/* <Counterintervall/> */}
