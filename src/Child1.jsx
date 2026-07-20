@@ -1,12 +1,9 @@
 import React from 'react'
 
-const Child1 = ({name}) => {  
-    console.log("child renderd")
+const Child1 = () => {
   return (
-    <div>
-   <h1>{name}</h1>
-    </div>
+    <div><h1>shifa yasmin</h1></div>
   )
 }
 
-export default React.memo(Child1)
+export default Child1

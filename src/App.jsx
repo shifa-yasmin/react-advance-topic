@@ -1,35 +1,26 @@
-
-// import Colorchange from './Colorchange'
-// import { Counterintervall } from "./Counterintervall"
-// import Button from "./Button"
-// import Fetchpost from "./Fetchpost"
-// import UseRef from "./UseRef"
-// import Pagination from "./Pagination"
-// import TudoTrash from "./TudoTrash"
-// import Fetchpost from "./Fetchpost"
-// import Fetchget from "./Fetchget"
-// import UseReducer from "./UseReducer"
-
-import Child from "./Child"
-
-
-
-const App = () => {  
+// import React from "react";
+// import "./style.css";
+import {useState} from "react"
+export default function App() {
+  const ar=[5,2,3,4,5,6];
+  const [currentPage,setCurrentPage]=useState(1)
+  const arrperPage=1;
+  const lastIndex= currentPage*arrperPage;
+  const firstIndex=lastIndex-arrperPage;
+  const totelPage=ar.slice(firstIndex,lastIndex)
+  const currentNumber=Math.ceil(ar.length/arrperPage);
   return (
     <div>
-       <Child/>
-    {/* <UseReducer/> */}
-      {/* <UseRef/> */}
-      {/* <Colorchange/> */}
-      {/* <Counterintervall/> */}
-      {/* <Button/> */}
-      {/* <Fetchpost/> */}
-      {/* <TudoTrash/> */}
-      {/* <Pagination/> */}
-      {/* <Fetchpost/> */}
-      {/* <Fetchget/> */}
+      <button onClick={()=>setCurrentPage(currentPage-1)} disabled={currentPage===1}>prev</button>
+     {totelPage.map((n)=>(
+        <div>
+          <button>{n}</button>
+        </div> 
+     ))}
+      <button onClick={()=>setCurrentPage(currentPage+1)} disabled={currentPage===currentNumber}>next</button>
+      {/* <button onClick={()=>setCurrentPage(currentPage-1)} disabled={currentPage===1}>prev</button> */}
+      {/* <span>{currentPage} </span> */}
+      {/* <button onClick={()=>setCurrentPage(currentPage+1)} disabled={currentPage===currentNumber}>next</button> */}
     </div>
-  )
+  );
 }
-
-export default App
